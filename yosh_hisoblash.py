@@ -19,18 +19,18 @@ yil_text = Label(text="Tug'ilgan yil:👇🏻")
 yil_text.place(x=145,y=35,width="110",height="30")
 
 
-yil = Entry()
+yil = Entry(bg="yellow")
 yil.place(x=160,y=70,width="80",height="30")
 
 def hisobla():
     bugun = datetime.today()
     natija.config(text=f"Siz {bugun.year-int(yil.get())} yoshdasiz! ")
     
-hisob = Button(text="Hisoblash",command=hisobla,bg="beige")
+hisob = Button(text="Hisoblash",command=hisobla,bg="limegreen")
 hisob.place(x=140,y=120,width="120",height="50")
 
 
-natija = Label(text="Natija", bg="white")
+natija = Label(text="Natija", bg="aqua")
 natija.place(x=140,y=180,width="120",height="40")
 
 
